@@ -1,0 +1,2021 @@
+<style type="text/css">
+    @font-face {
+        font-family: BRCandor-Bold;
+        src: url(/fonts/BRCandor-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: BRCandor;
+        src: url(/fonts/BRCandor-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: BRCandor-Medium;
+        src: url(/fonts/BRCandor-Medium.ttf);
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'BRCandor';
+        background-color: #fafafa;
+        font-size: 14px;
+        box-sizing: border-box;
+        line-height: 16px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .container {
+        margin: 0 auto;
+        max-width: 1038px;
+        padding-right: 30px;
+        padding-left: 30px;
+        width: 100%;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 13px;
+        margin-bottom: 32px;
+    }
+
+    .card-body {
+        padding: 45px 40px;
+    }
+
+    .card-title {
+        background-color: #ff1930;
+        color: #fff !important;
+        font-size: 25px;
+        padding: 19px 20px;
+        border-radius: 10px;
+        margin: 0;
+        font-family: 'BRCandor-Bold';
+    }
+
+    .widgets {
+        display: flex;
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+
+
+    .widget {
+        font-family: 'BRCandor-Bold';
+        box-sizing: border-box;
+        border: solid 2px #2c2e3e;
+        width: 25%;
+        padding: 15px;
+        margin: 15px 10px;
+        border-radius: 15px;
+    }
+
+    .widget--cts {
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 33px 10px;
+        cursor: pointer;
+    }
+
+    .widget--cts a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .widget--cts:hover {
+        background: #ffffff;
+        box-shadow: 0px 0px 12px #969cac,
+        -6px -6px 25px #ffffff;
+    }
+    /*//////////////////////*/
+
+    .widgets--solicitud {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .card-subtitle {
+        font-family: 'BRCandor-Bold';
+        background-color: #ff1930;
+        display: inline-block;
+        font-size: 25px;
+        color: #fff;
+        padding: 8px 10px;
+        border-radius: 4px;
+        position: relative;
+        margin-bottom: 40px;
+        z-index: 2;
+    }
+
+    .card-subtitle:after {
+        content: "";
+        position: absolute;
+        background: inherit;
+        width: 10px;
+        height: 10px;
+        transform: rotate( 45deg);
+        left: 30px;
+        bottom: -4px;
+        z-index: 1;
+        border-radius: 2px;
+    }
+
+    .widget-solicitud {
+        padding: 40px 20px;
+        font-size: 19px;
+    }
+
+    .widget-solicitud:hover {
+        background-color: #5751ff;
+        color: #fff;
+        box-shadow: 0px 0px 12px #969cac,
+        -6px -6px 25px #ffffff;
+    }
+
+    .widget-img {
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-bottom: 30px;
+    }
+    /*////////////////////////////////*/
+
+    .widgets--pasos {
+        margin-right: -30px;
+        margin-left: -30px;
+    }
+
+    .card-subtitle-v2 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .bgtitle {
+        background-color: #eeedff;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-left: 10px;
+        display: inline-block;
+    }
+
+    .widget--red {
+        width: 250px;
+        max-width: 250px;
+        flex: 0 0 auto;
+        background-color: #ff1930;
+        color: #fff;
+        border: 0px;
+        font-size: 16px;
+        padding: 30px 10px;
+    }
+
+    .widget--auto {
+        flex: 1 1 auto;
+        margin-left: 70px;
+        font-size: 21px;
+        line-height: 22px;
+        padding: 30px 10px;
+        position: relative;
+    }
+
+    .widget--auto::before {
+        content: url(./images/flecha.png);
+        position: absolute;
+        width: 50px;
+        height: 45px;
+        left: -60px;
+        bottom: 50%;
+    }
+
+
+
+
+    .widget-title {
+        line-height: 25px;
+        font-size: 24px;
+        margin-left: 15px;
+        display: block;
+    }
+
+    .button-ghost {
+        border: 2px solid #5751ff;
+        color: #5751ff;
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 30px;
+    }
+
+    .b-ghost--purple:hover {
+        background-color: #5751ff;
+        color: #fff;
+    }
+
+    .footer {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: -20px;
+    }
+    /*////////////////////////////////*/
+
+    .card-subtitle-adm {
+        font-family: BRCandor-Bold;
+        font-size: 43px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .card-subtitle-adm span {
+        color: #ff1930;
+    }
+
+    .card-body--adm {
+        padding: 42px 40px;
+    }
+
+    .widget--adm {
+        margin-top: 45px;
+        padding-top: 34px;
+        padding-bottom: 34px;
+    }
+    /*/////// footer //////////*/
+
+    .footer {
+        width: 100%;
+        background-color: #fff;
+        margin-top: 30px;
+        padding: 35px 0;
+    }
+
+    .footer-adm {
+        margin-top: calc(100vh - 565px);
+    }
+
+    .footer-plan {
+        margin-top: calc(100vh - 586px);
+    }
+
+    .footer-body {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .foooter-logo {
+        margin-left: 15px;
+        margin-right: 40px;
+    }
+
+    .footer-consultas {
+        text-align: right;
+        max-width: 435px;
+        font-size: 8px;
+        color: #999999;
+    }
+
+    .footer-consultas span {
+        display: block;
+        color: #ff1930;
+        font-size: 14px;
+    }
+
+    .footer--cts {
+        width: auto;
+        padding: 35px 0 0;
+    }
+    /*//////////////RENUNCIAS//////////*/
+
+    .b-ghost--red {
+        font-family: BRCandor-Bold;
+        color: #ff1930;
+        border-color: #ff1930;
+        border-radius: 18px;
+        font-size: 21px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right: 30px;
+    }
+
+    .b-ghost--red:hover {
+        background-color: #ff1930;
+        color: #fff;
+    }
+
+    .card-body--renuncia {
+        padding: 0 40px;
+    }
+
+    .footer--renuncia {
+        margin-top: 0;
+        padding: 5px 0 42px;
+    }
+
+    .footer--renuncia_b {
+        margin-top: calc(100vh - 530px);
+    }
+    /*////////////reglamentos//////////////*/
+
+    .widget--reglamento {
+        border: 0px;
+        box-shadow: 0px 0px 12px #969cac, -6px -6px 25px #ffffff;
+        padding: 46px 23px;
+        margin: 10px 16px;
+    }
+
+    .button-ghost--reglamento {
+        font-size: 15px;
+        padding: 5px 10px;
+        border-radius: 15px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    .button-ghost--reglamento:hover {
+        background-color: #5751ff;
+        color: #fff;
+    }
+
+    .widget-text {
+        font-family: 'BRCandor-Medium';
+        font-size: 13px;
+    }
+
+    .widgets--reglamento {
+        margin-right: -30px;
+        margin-left: -30px;
+    }
+
+    .footer--reglamento {
+        margin-top: calc(100vh - 665px);
+    }
+    /*///////////PLAN////////////////*/
+
+    .widget--plan {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 13px;
+        border-radius: 10px;
+        margin-top: 0;
+    }
+
+    .widget--plan:hover {
+        box-shadow: 0px 0px 12px #969cac,
+        -6px -6px 25px #ffffff;
+    }
+
+    .consul {
+        font-family: BRCandor-Bold;
+        border: solid 2px #ff1930;
+        border-radius: 10px;
+        padding: 12px 15px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .consul-title {
+        color: #ff1930;
+        font-size: 22px;
+        margin-right: 15px;
+    }
+
+    .consul-img {
+        margin-right: 5px;
+    }
+
+    .consul-text {
+        font-size: 10px;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .consul-text span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mt-85 {
+        margin-top: 85px;
+    }
+    /*/////cupos//////////*/
+
+    .widgets-cupo {
+        display: flex;
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
+    .widget-cupo-box {
+        position: relative;
+        z-index: 1;
+        background: #fff;
+        margin: 0 20px;
+        width: 300px;
+    }
+
+    .widget-cupo {
+        border: 3.5px solid #5751ff;
+        padding: 15px 5px 15px 30px;
+        margin-left: 40px;
+        border-radius: 8px;
+        background-color: #fff;
+        z-index: 2;
+    }
+
+    .widget-cupo-box::after {
+        content: "";
+        position: absolute;
+        background: #5751ff;
+        width: 18px;
+        height: 18px;
+        transform: rotate(45deg);
+        right: -7px;
+        bottom: calc(50% - 9px);
+        z-index: -1;
+        border-radius: 2px;
+    }
+
+    .widget-cupo-num {
+        font-family: BRCandor-Bold;
+        position: absolute;
+        left: 0;
+        display: inline-block;
+        background: #fff;
+        font-size: 35px;
+        line-height: 38px;
+        color: #ff1930;
+        top: calc(50% - 19px);
+    }
+
+    .widget-cupo-text {
+        font-size: 17px;
+        color: #5751ff;
+        min-height: 48px;
+    }
+
+    .tickets {
+        display: flex;
+        margin-right: -10px;
+        margin-left: -10px;
+        flex-wrap: wrap;
+    }
+
+    .ticket-cut {
+        position: absolute;
+        bottom: 10px;
+        left: 122px;
+    }
+
+    .ticket {
+        display: flex;
+        margin: 10px 10px;
+        flex: 1 1 auto;
+        position: relative;
+    }
+
+    .ticket-cupo {
+        font-family: BRCandor-Bold;
+        width: 130px;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #6000d0;
+        color: #fff;
+        border-radius: 19px;
+        padding: 25px 10px;
+    }
+
+    .ticket-cupo span {
+        display: inline-block;
+        border-radius: 13px;
+        font-size: 14px;
+        border: 3px solid #fff;
+        padding: 10px 10px;
+        line-height: 14px;
+        margin-top: 15px;
+    }
+
+    .ticket-body {
+        width: 344px;
+        background-color: #6000d0;
+        color: #fafafa;
+        display: flex;
+        border-radius: 13px;
+        overflow: hidden;
+        border-left: 2px dashed #fff;
+        flex: 1 1 auto;
+    }
+
+    .ticket-bg--green {
+        background-color: #7bc949;
+    }
+
+
+    .ticket-title {
+        background-color: #fff;
+        color: #6000d0;
+        line-height: 20px;
+        font-size: 13px;
+        text-align: center;
+        margin-right: -15px;
+        margin-left: -15px;
+        padding: 5px;
+    }
+
+    .ticket--text {
+        color: #7bc949;
+    }
+
+
+
+    .ticket-from {
+        flex: 1 1 auto;
+        margin: 15px;
+    }
+
+    .ticket-img {
+        flex: 0 0 auto;
+        width: 145px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cols {
+        display: flex;
+        /* margin: 5px 10px; */
+    }
+
+    .cols select {
+        padding: 2px 2px 3px;
+    }
+
+    .ticket-from label {
+        margin-top: 15px;
+        margin-bottom: 3px;
+        display: block;
+    }
+
+    .ticket-button {
+        display: block;
+        background-color: #ff1930;
+        padding: 10px 20px;
+        border: 0;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+
+    .select-full {
+        width: 100%;
+        padding: 2px 2px 3px;
+    }
+
+    .cupo--bg-gray {
+        background-color: #fafafa;
+    }
+    /*/////////TABLE//////////*/
+
+    table {
+        border-right-color: #ffffff;
+        font-size: 17px;
+        /* /* border: 1px solid #343a40; */
+        border-collapse: collapse;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    th,
+    td {
+        /* border: 1px solid #343a40; */
+        font-size: 13px;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #ff1930;
+        color: #fff;
+        width: 20%;
+    }
+
+    tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
+    }
+
+
+    tbody tr:nth-child(even) {
+        background-color: #e9ecef;
+    }
+    /*////////////TABLE RENUNCIA//////////////*/
+
+    .card-body--renuncia {
+        padding: 45px 30px;
+    }
+    /*////////////renuncia////////////*/
+
+    .widgets-boxs {
+        display: flex;
+    }
+
+    .widget-box {
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .widget-box-body {
+        padding: 15px 10px;
+    }
+
+    .widget-box-wrap {
+        margin: 20px;
+        flex: 1 1 auto;
+        width: 200px;
+    }
+
+    .widget-box-desc {
+        margin: 20px 10px 10px;
+    }
+
+    .widget-box-title {
+        font-size: 18px;
+        font-family: 'BRCandor-Bold';
+        background-color: #ff1930;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    .widget-box-title::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #ff1930;
+        position: absolute;
+        bottom: -5px;
+        transform: rotate(45deg);
+        right: calc(50% - 10px);
+        border-bottom-right-radius: 2px;
+    }
+
+
+    .bg-hover:hover {
+        background-color: #5751ff;
+        color: #fff;
+    }
+
+    .widget--subtitle {
+        font-size: 18px;
+    }
+
+    .wrap-footer-box {
+        margin: 20px;
+    }
+
+    .wrap-footer {
+        display: flex;
+    }
+
+    .wrap-text {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .wrap-button {
+        font-family: BRCandor-Bold;
+        font-size: 21px;
+    }
+
+    .myfooter {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .wrap-buton-red {
+        border: 2px solid #ff1930;
+        color: #ff1930;
+    }
+
+
+    .wrap-buton-red:hover {
+        background-color: #ff1930;
+        color: #fff;
+    }
+
+    .widget--nomina {
+        padding: 35px 15px;
+    }
+
+    .nomina-list {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-bottom: 8px;
+    }
+
+    .plantilla-wrap {
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 100px;
+    }
+
+    .plantilla-title {
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-bottom: 3px solid #e8e7ff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .plantilla-body {
+        padding: 20px 10px;
+    }
+
+    .plantilla-body a {
+        color: #ff1930;
+        text-decoration: none;
+    }
+    /*///////options///////*/
+
+    .bg-shadown {
+        box-shadow: 0px 0px 12px #969cac, -6px -6px 25px #ffffff;
+    }
+
+    .mt-30 {
+        margin-top: 30px;
+    }
+
+    .d-block {
+        display: block;
+    }
+
+    .mt-20 {
+        margin-top: 30px;
+    }
+
+    .mb-20 {
+        margin-bottom: 20px;
+    }
+
+    .ml-20 {
+        margin-left: 20px;
+    }
+
+    .bd-2 {
+        border: 2px solid #2c2e3e;
+    }
+    /*///Registro//*/
+
+    .title-normal {
+        font-family: BRCandor-Bold;
+        font-size: 25px;
+        padding-top: 38px;
+        padding-left: 53px;
+    }
+
+    .widget--register {
+        padding: 46px 24px;
+        margin: 30px;
+        font-size: 17px;
+    }
+
+    .widget--register:hover {
+
+        background: #ffffff;
+        box-shadow: 0px 0px 12px #969cac,
+        -6px -6px 25px #ffffff;
+    }
+
+    .card-body--register {
+        padding: 8px 23px;
+    }
+
+    .widgets--register {
+        display: flex;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .footer--register {
+        margin-top: calc(100vh - 532px);
+    }
+    /*//Renovaci&oacute;n ///*/
+
+    .card-box {
+        display: flex;
+
+        padding-top: 47px;
+        padding-left: 22px;
+        padding-right: 25.7px;
+        font-family: BRCandor-Bold;
+        font-size: 20px;
+        justify-content: space-between;
+    }
+
+    .title-renovacion {
+        margin-right: 93px;
+    }
+
+    .search {
+        font-size: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-box {
+        position: relative;
+    }
+
+    .search-img {
+        position: absolute;
+        right: 10px;
+        top: calc(50% - 7px);
+    }
+
+    .search input {
+        background-color: #eeedff;
+        font-size: 16px;
+        border: 0;
+        padding: 5px 30px 5px 5px;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+
+
+
+    .card-nuevo {
+        padding: 46px 26px 40px 21px;
+        font-family: BRCandor;
+        background-color: #fff;
+    }
+
+    .titles-nuevo {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ff1930;
+        color: #fff;
+        font-size: 17.5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .card-nuevo-body {
+        font-size: 13.9px;
+        text-align: center;
+    }
+
+    .card-box-r {
+        padding-bottom: 30px;
+    }
+
+    .table--r {
+        font-size: 17px;
+    }
+
+    .table-black {
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+
+    .table-black th {
+        background-color: #2c2e3e;
+    }
+
+    .table-black tr {
+        border: 2px solid #2c2e3e;
+        background-color: #fff !important;
+    }
+    /*/renovaciones//*/
+
+    .card-body--r {
+        padding: 34px 60px 44px 53px;
+    }
+
+    .card-subtitle--r {
+        margin: 0px 0px 0px 2px;
+    }
+
+    .widgets--r {
+
+        margin-left: -15px;
+        margin-right: -15px;
+        flex-wrap: wrap;
+    }
+
+    .widget--r {
+        padding: 46px 44px 37px 22px;
+
+        font-size: 17px;
+        font-family: BRCandor-Bold;
+        margin: 12px 15px 38px 15px;
+    }
+
+    .widget--r:hover {
+        padding: 46px 44px 37px 22px;
+
+        font-size: 17px;
+        font-family: BRCandor-Bold;
+        margin: 12px 15px 38px 15px;
+        box-shadow: 0px 0px 12px #969cac,
+        -6px -6px 25px #ffffff;
+    }
+
+    .title-renovacion--r {
+        font-family: BRCandor-Bold;
+        font-size: 18px;
+        margin-left: 2px;
+        margin-bottom: 20px;
+    }
+
+    .box-r {
+        border: #000 solid;
+        border-radius: 10px;
+        font-family: BRCandor-Bold;
+        font-size: 17px;
+        min-height: 150px;
+        padding-top: 35px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+        line-height: 25px;
+    }
+
+    .box-r:hover {
+
+        box-shadow: 0px 0px 12px #969cac,
+        -6px -6px 25px #ffffff;
+    }
+
+    .row--r {
+        margin-bottom: 25px;
+    }
+
+    .mt-85--r {
+        margin-top: 30px;
+    }
+    /*//////////postula//////////*/
+
+    .widget-postula {
+        font-size: 14px;
+        line-height: 15px;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    .widget-cupo--postula {
+        margin: 10px;
+    }
+
+
+    .postula-sub {
+        background-color: #ff1930;
+        color: #fff;
+        padding: 12px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .postula-sub:after {
+        content: "";
+        position: absolute;
+        background: inherit;
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        left: 30px;
+        bottom: -4px;
+        z-index: 1;
+        border-radius: 2px;
+    }
+
+    .postula-body {
+        background-color: #fff;
+        line-height: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        min-height: 460px;
+    }
+
+    .postula-body b {
+        display: block;
+    }
+
+    .postula-ul-text {
+        padding-left: 13px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .postula-button {
+        margin-top: 25px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: 3px solid #ff1930;
+        color: #ff1930;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .postula-button:hover {
+        background-color: #ff1930;
+        color: #fff;
+    }
+
+    .card-body-postula {
+        padding: 45px 20px;
+    }
+
+    .postula-title {
+        font-weight: bold;
+        font-size: 25px;
+        display: inline-block;
+        background-color: #ff1930;
+        padding: 15px 30px;
+        border-radius: 5px;
+        color: #fff;
+    }
+
+    .button-ghost-renuncia {
+        border: 3px solid #5751ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .button-ghost-renuncia:hover path {
+        fill: #fff;
+    }
+
+    #pageContentTitle {
+        display: none;
+    }
+
+    #DivForm {
+        width: 100%;
+        background-image: radial-gradient(#fdfeff, #dcf2ff);
+        padding: 15px 10px 15px 0px;
+    }
+
+    .Header {
+        color: #fff;
+        font-weight: bold;
+        background: #FFC600;
+        position: relative;
+        z-index: 1;
+        padding: 20px 10px 20px 40px;
+        margin-bottom: 20px;
+        -webkit-border-top-left-radius: 0px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 0px;
+        -moz-border-radius-topright: 8px;
+        -moz-border-radius-bottomright: 10px;
+        border-radius: 0px 10px 10px 0px;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+        width: 80%;
+    }
+
+    .hTitle {
+        font-size: 34px;
+        font-family: verdana;
+    }
+
+    .dEstado {
+        font-size: 20px;
+    }
+
+    #divEstado {
+        color: #a6479f;
+        font-weight: bold;
+        font-size: 22px;
+        margin: 0px 0px 15px 5px;
+    }
+
+    #datosUser {
+        margin: 30px;
+        padding: 10px;
+        border: 2px solid #a6479f;
+        position: relative;
+        z-index: 0;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-radius: 10px 10px 10px 10px;
+        background: #fff;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+    }
+
+    #preguntas {
+        margin: 30px;
+        padding: 10px;
+        border: 2px solid #a6479f;
+        position: relative;
+        z-index: 0;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-radius: 10px 10px 10px 10px;
+        background: #fff;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+    }
+
+    .subtitulo {
+        font-weight: bold;
+        font-size: 18px;
+        color: #a6479f;
+        background: #FFC600;
+        position: relative;
+        z-index: 0;
+        padding: 10px 10px 10px 15px;
+        margin: -20px 0px 10px -20px;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+    }
+
+    .subtitulo2 {
+        font-weight: bold;
+        font-size: 18px;
+        color: #a6479f;
+        background: #FFC600;
+        position: relative;
+        z-index: 0;
+        padding: 10px 10px 10px 15px;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+    }
+
+    .negro {
+        font-weight: bold;
+    }
+
+    .negro2 {
+        /*font-weight:bold;*/
+    }
+
+    td {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    #btnEnviar {
+        position: relative;
+        margin: 10px 5px 10px 5px;
+        padding: 10px 30px;
+        text-decoration: none !important;
+        background-color: #a6479f;
+        border: 1px solid #a6479f;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff !important;
+        float: left;
+        cursor: pointer;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+    }
+
+
+    #btnExport {
+        position: relative;
+        margin: 10px 5px 10px 5px;
+        padding: 10px 30px;
+        text-decoration: none !important;
+        background-color: #a6479f;
+        border: 1px solid #a6479f;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff !important;
+        float: left;
+        cursor: pointer;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+    }
+
+    #btnRegresar {
+        position: relative;
+        margin: 10px 5px 10px 5px;
+        padding: 10px 30px;
+        text-decoration: none !important;
+        background-color: #a6479f;
+        border: 1px solid #a6479f;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff !important;
+        float: left;
+        cursor: pointer;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+    }
+
+    .btnMdl {
+        position: relative !important;
+        margin: 10px 5px 10px 5px !important;
+        padding: 10px 30px !important;
+        text-decoration: none !important;
+        background-color: #a6479f !important;
+        border: 1px solid #a6479f !important;
+        font-size: 18px !important;
+        font-weight: bold !important;
+        color: #fff !important;
+        cursor: pointer !important;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+    }
+
+
+    #DivModalRec,
+    #DivModalRec2 {
+        padding: 20px;
+        font-size: 22px;
+    }
+
+    .ms-dlgBorder {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .ms-dlgTitle {
+        background-color: #FFC600 !important;
+    }
+
+    .ms-dlgContent {
+        border: none !important;
+    }
+
+    .ms-dlgBorder {
+        border: 1px solid #a6479f !important;
+    }
+
+    .ms-dlgTitle h1 {
+        font-size: 42px;
+        font-weight: bold;
+        color: #a6479f !important;
+        line-height: 1.5;
+    }
+
+    .ms-dlgFrameContainer {
+        background: #fff !important;
+        padding: 0px !important;
+    }
+
+    .ms-dlgFrameContainer {
+        overflow: hidden !important;
+    }
+
+    #trObservaciones span {
+        font-weight: bold;
+        color: #ec6748;
+    }
+
+    #trObservaciones div {
+        color: #ec6748;
+        border: 1px solid #ec6748;
+        background: #FFDBD2;
+        padding: 10px;
+        margin: 10px 0px;
+    }
+
+    .txt {
+        width: 300px !important;
+    }
+
+    select {
+        width: 260px !important;
+    }
+
+    .campo-fecha {
+        width: 100px !important;
+    }
+
+    #msgImpresion {
+        width: 750px;
+        position: relative;
+        margin: 10px 5px 10px 5px;
+        padding: 10px 15px;
+        text-decoration: none !important;
+        border: 2px solid #FFC600;
+        background: #FFC600;
+        color: #a6479f;
+        font-size: 14px;
+        float: left;
+        font-weight: bold;
+        cursor: pointer;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        border-radius: 10px 10px 10px 10px;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+    }
+
+    #selecTipOper {
+        margin: 0px !important;
+    }
+
+    .tipOper {
+        margin: 6px;
+        padding: 15px;
+        height: 200px;
+        min-width: 200px;
+        max-width: 200px;
+        border: 1px solid transparent;
+        -webkit-border-top-left-radius: 15px;
+        -webkit-border-bottom-left-radius: 15px;
+        -moz-border-radius-topleft: 15px;
+        -moz-border-radius-bottomleft: 15px;
+        border-radius: 15px 15px 15px 15px;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+        cursor: pointer;
+    }
+
+    #formulario .row {
+        margin: 0px !important;
+    }
+
+    #formulario .col {
+        padding: 8px 15px !important;
+    }
+
+    #DivTipOper {
+        color: #a6479f;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #divBeneficio {
+        text-align: justify;
+        margin: -50px 30px 30px 30px;
+        padding: 40px 20px 20px 20px;
+        border: 2px solid #a6479f;
+        position: relative;
+        z-index: 0;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-radius: 10px 10px 10px 10px;
+        background: #fff;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+    }
+
+    #DivFlujo {
+        margin: 30px;
+        padding: 10px;
+        border: 2px solid #a6479f;
+        position: relative;
+        z-index: 0;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-radius: 10px 10px 10px 10px;
+        background: #fff;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+    }
+
+    #DivAnteriores {
+        margin: 30px;
+        padding: 10px;
+        border: 2px solid #a6479f;
+        position: relative;
+        z-index: 0;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-radius: 10px 10px 10px 10px;
+        background: #fff;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+        display: none;
+    }
+
+    .cPaso {
+        padding: 0px !important;
+    }
+
+    .paso {
+        width: 190px;
+        height: 160px;
+        float: left;
+        background-size: contain !important;
+        opacity: 0.2;
+    }
+
+    .activo {
+        opacity: 1 !important;
+    }
+
+    .flecha {
+        width: 40px;
+        height: 160px;
+        background: url('/images/flujo/flecha.jpg') no-repeat;
+        background-position: 0px 45px;
+        background-size: contain;
+        margin-left: 12px;
+        float: left;
+        opacity: 0.6;
+    }
+
+    #divDatosUser {
+        margin: -36px 0px 10px 0px;
+        padding: 3px 10px 3px 3px;
+        border: 2px solid #a6479f6e;
+        float: right;
+        position: relative;
+        z-index: 0;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -webkit-border-bottom-right-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -moz-border-radius-topright: 10px;
+        -moz-border-radius-bottomright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-radius: 10px 10px 10px 10px;
+        background: #fff;
+        behavior: url("/sites/rimachome/_catalogs/masterpage/css/PIE.htc");
+    }
+
+    .ui-tooltip {
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        padding: 0px 6px !important;
+        box-shadow: none !important;
+    }
+</style>
+<link rel='stylesheet' type='text/css' href='/jquery-ui.min.css?v=122214' />
+
+<div id="DivForm" class="container">
+    <!-- START NEW FORMULARIO -->
+    <div class="container">
+        <div class="row">
+            <div class="card mt-85">
+                <h2 class="card-title">
+                    Tu Solicitud de Gesti&oacute;n CTS
+                </h2>
+
+                <div class="card-body">
+                    La Compensaci&oacute;n por Tiempo de Servicio (CTS) es un beneficio que alcanza a todos los trabajadores. Se Paga en los
+                    meses de mayo y noviembre y el empleador debe depositar a nombre de sus trabajadores en una cuenta CTS
+                    (distinta a la de haberes), en una entidad financiera escogida libremente por el colaborador.<br><br>                    Dada la coyuntura actual, algunas entidades est&aacute;n realizando los tr&aacute;mites de CTS de forma
+                    virtual y otras siguen manteniendo la misma gesti&oacute;n en f&iacute;sico.<br><br>
+                    <b>Gesti&oacute;n de forma Virtual:</b> Cajas, Cooperativas y Financieras<br><br> Deber&aacute; registrar
+                    su solicitud, descargar el formato, firmar y enviarlo junto con una copia del DNI, por correo a luis.garay@rimac.com.pe<br><br>
+                    <b>Gesti&oacute;n de forma F&iacute;sica:</b> Todos los bancos<br><br> Deber&aacute; ingresar su solucitud,
+                    imprimirla, firmarla con pu&ntilde;o y letra y enviarlo junto con una copia del DNI a Mesa de partes
+                    de la sede Torre del Parque, con la srta. Maristela Panta (9:00 am - 5:00 pm). Se adjunta las solicitudes
+                    en formato PDF, en caso no las pueda descargar por falta de conexi&oacute;n VPN:
+
+                    <div class="widgets">
+                        <div class="widget widget--cts">
+                            <a href="https://rimacsegurosperu.sharepoint.com/atts/SOLICITUD APERTURA DE CUENTA DE CTS SEGUROS.pdf"
+                                target='_blank'>SOLICITO APERTURA DE CUENTA DE CTS SEGUROS</a>
+
+
+                        </div>
+
+                        <div class="widget widget--cts">
+                            <a href="https://rimacsegurosperu.sharepoint.com/atts/SOLICITUD UNIFICACION DE CUENTAS DE CTS SEGUROS.pdf"
+                                target='_blank'>SOLICITO UNIFICACI&Oacute;N DE CUENTAS DE CTS SEGUROS</a>
+                        </div>
+
+                        <div class="widget widget--cts">
+                            <a href="https://rimacsegurosperu.sharepoint.com/atts/SOLICITUD TRASLADO CTS SEGUROS.pdf"
+                                target='_blank'>SOLICITUD TRASLADO CTS SEGUROS</a>
+                        </div>
+
+                        <div class="widget widget--cts">
+                            <a href="https://rimacsegurosperu.sharepoint.com/atts/SOLICITUD APERTURA DE CUENTA DE CTS EPS.pdf"
+                                target='_blank'>SOLICITO APERTURA DE CUENTA DE CTS EPS</a>
+                        </div>
+
+                        <div class="widget widget--cts">
+                            <a href="https://rimacsegurosperu.sharepoint.com/atts/SOLICITUD UNIFICACION DE CUENTAS DE CTS EPS.pdf"
+                                target='_blank'>SOLICITO UNIFICACI&Oacute;N DE CUENTAS DE CTS EPS</a>
+                        </div>
+
+                        <div class="widget widget--cts">
+                            <a href="https://rimacsegurosperu.sharepoint.com/atts/SOLICITUD TRASLADO CTS EPS.pdf"
+                                target='_blank'>SOLICITUD TRASLADO CTS EPS</a>
+                        </div>
+
+                    </div>
+
+                    Las gestiones de CTS para el pago Noviembre 2020, se podr&aacute;n efectuar hasta este viernes 11 de Setiembre. Toda solicitud
+                    requerida fuera de la fecha establecida se efectuar&aacute; en Diciembre 2020. Recordemos que las entidades
+                    manejan un tiempo de 15 a 20 d&iacute;as h&aacute;biles para tramitar toda solicitud.
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card">
+                <h2 class="card-title">
+                    Tu solicitud
+                </h2>
+
+                <div class="card-body">
+
+                    <div class="card-subtitle">
+                        Selecciona tu solicitud
+                    </div>
+
+                    <div class="widgets widgets--solicitud">
+                        <div class="widget widget-solicitud">
+
+                            <img class="widget-img" src="images/Grupo 13.png" alt="">                            Apertura de cuenta de CTS
+                        </div>
+
+                        <div class="widget widget-solicitud">
+                            <img class="widget-img" src="images/Grupo 8.png" alt="">                            Traslado de CTS
+                        </div>
+
+                        <div class="widget widget-solicitud">
+                            <img class="widget-img" src="images/Grupo 13.png" alt="">                            Unificaci&oacute;n de CTS
+                        </div>
+
+                        <div class="widget widget-solicitud">
+                            <img class="widget-img" src="images/Grupo 24.png" alt="">                            Cambio de moneda
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+   
+        <div class="row">
+            <div class="card">
+                <h2 class="card-title">
+                    Pasos
+                </h2>
+
+                <div class="card-body">
+                    <span class="card-subtitle-v2">Solicitante</span> <span id="spNombre" class="bgtitle"></span>
+
+                    <div class="widgets widgets--pasos">
+                        <div class="widget widget--red">
+                            <div style="max-width:250px">
+                                <span class="widget-title">&#191;Qu&eacute; proceso deseas <b>realizar?</b></span>
+                                <ul>
+                                    <li>Apertura</li>
+                                    <li>Traslado</li>
+                                    <li>Unificaci&oacute;n</li>
+                                    <li>Cambio de moneda</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="widget widget--auto">
+                            <img class="widget-img" src="images/Grupo 26.png" alt="">                            Exporta y env&iacute;a tu solicitud
+                        </div>
+
+                        <div class="widget widget--auto">
+                            <img class="widget-img" src="images/Grupo 27.png" alt="">                            &#161;Tu tr&aacute;mite se encuentra en proceso!
+                        </div>
+
+                        <div class="widget widget--auto">
+                            <img class="widget-img" src="images/Grupo 28.png" alt="">                            Registra tu cuenta CTS
+                        </div>
+
+                    </div>
+
+                    <div class="footer footer--cts">
+                        <div class="button-ghost b-ghost--purple">Ir al panel de administraci&oacute;n</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END NEW FORMULARIO -->
+    <div class="Header">
+        <span class="hTitle">Tu Solicitud de Gesti&oacute;n CTS</span>
+    </div>
+    <div id="divBeneficio">
+        La Compensaci&oacute;n por Tiempo de Servicio (<b>CTS</b>) es un beneficio que se abona en los meses de <b>mayo</b>        y <b>noviembre</b> en una entidad financiera escogida libremente por nuestros colaboradores (distinta a tu cuenta
+        sueldo).
+        <br/><br/>
+
+        <!--La fecha l&iacute;mite de presentaci&oacute;n de la solicitud de CTS son los 20 de cada mes para que sea procesada en la &uacute;ltima semana del mismo mes.
+	<br/><br/>-->
+
+        <!--Todas las solicitudes ingresadas desde el 29 de marzo, se gestionar&aacute;n en Junio.-->
+        <!--Todas las solicitudes ingresadas desde el 26 de marzo, ser&aacute;n gestionadas en junio.-->
+        <!--Dada la coyuntura, todas las solicitudes ingresadas y que no tuvieron confirmaci&oacute;n de recepci&oacute;n, ser&aacute;n gestionadas despu&eacute;s del pago de Mayo-->
+
+        <!--Dada la coyuntura actual, las gestiones de CTS solo se est&aacute;n realizando por correo. Por lo que es necesario que luego de descargar su solicitud y llenarla, la env&iacute;en junto con la copia de DNI a grubinav@rimac.com.pe.
+    <br/><br/>Podr&aacute;n realizarse las Aperturas, Traslados y unificaciones, siempre y cuando la entidad financiera acepta la documentaci&oacute;n (Solicitud CTS + Copia de DNI + Carta de la empresa) por correo. De lo contrario no proceder&aacute;.
+	<br/><br/>
+	<br/>-->
+
+        <!--Dada la coyuntura actual, algunas entidades est&aacute;n realizando los tr&aacute;mites de CTS de forma virtual y otras siguen manteniendo la misma gesti&oacute;n en f&iacute;sico.-->
+        Por la coyuntura, las entidades bancarias est&aacute;n manejando las solicitudes de CTS de forma Virtual o Presencial. Sigue
+        los pasos que se indican de acuerdo a la gesti&oacute;n a realizar
+        <br/><br/>
+        <!--<b>Gesti&oacute;n de forma Virtual:</b> Cajas, Cooperativas y Financieras
+	<br/>Deber&aacute; registrar su solicitud, descargar el formato, firmar y enviarlo junto con una copia del DNI, por correo a <a href="mailto:gdh_gestionadministrativa@rimac.com.pe">gdh_gestionadministrativa@rimac.com.pe<a>.
+	<br/><br/> 
+	<b>Gesti&oacute;n de forma F&iacute;sica:</b> Todos los Bancos 
+	<br/>Deber&aacute; ingresar su solicitud, imprimirla, firmarla con pu&ntilde;o y letra y enviarlo junto con una copia del DNI a Mesa de partes de la sede Torre del Parque, con la srta. Maristela Panta (9:00 am - 5:00 pm).-->
+
+        <b>&iquest;Cu&aacute;ndo solicitar una Apertura de CTS?</b><br> En caso seas colaborador nuevo. Recuerda que la cuenta
+        de CTS es &uacute;nica por cada Empleador.<br>
+        <b>&iquest;Cu&aacute;ndo solicitar un Traslado de CTS?</b><br> Cuando deseas cambiar tus fondos de CTS hacia otra
+        entidad bancaria.<br>
+        <b>&iquest;Cu&aacute;ndo solicitar una Unificaci&oacute;n de CTS?</b><br> Cuando mantienes dos cuentas en la misma
+        entidad de CTS.<br>
+        <b>&iquest;Cu&aacute;ndo solicitar un Cambio de moneda?</b><br> Cuando deseas cambiar tu cuenta de soles a d&oacute;lares
+        o viceversa.<br/>
+        <br/>
+
+        <b>
+	Se adjunta las solicitudes en formato PDF, en caso no las pueda descargar por falta de conexi&oacute;n VPN:
+	<ul>	
+	<li><a href="https://rimacsegurosperu.sharepoint.com/atts/SOLICITUD APERTURA DE CUENTA DE CTS SEGUROS.pdf" target='_blank'>SOLICITO APERTURA DE CUENTA DE CTS SEGUROS</a></li>
+	<li><a href="https://rimacsegurosperu.sharepoint.com/atts/SOLICITUD UNIFICACION DE CUENTAS DE CTS SEGUROS.pdf" target='_blank'>SOLICITO UNIFICACI&Oacute;N DE CUENTAS DE CTS SEGUROS</a></li>	
+	<li><a href="https://rimacsegurosperu.sharepoint.com/atts/SOLICITUD TRASLADO CTS SEGUROS.pdf" target='_blank'>SOLICITUD TRASLADO CTS SEGUROS</a></li>
+	
+	<li><a href="https://rimacsegurosperu.sharepoint.com/atts/SOLICITUD APERTURA DE CUENTA DE CTS EPS.pdf" target='_blank'>SOLICITO APERTURA DE CUENTA DE CTS EPS</a></li>
+	<li><a href="https://rimacsegurosperu.sharepoint.com/atts/SOLICITUD UNIFICACION DE CUENTAS DE CTS EPS.pdf" target='_blank'>SOLICITO UNIFICACI&Oacute;N DE CUENTAS DE CTS EPS</a></li>
+	<li><a href="https://rimacsegurosperu.sharepoint.com/atts/SOLICITUD TRASLADO CTS EPS.pdf" target='_blank'>SOLICITUD TRASLADO CTS EPS</a></li>
+	
+	</ul>
+	</b>
+
+        <!--Las siguientes entidades financieras son las &uacute;nicas que est&aacute;n aceptando y recibiendo traslados y aperturas de cuenta CTS de forma virtual:
+	
+	<b>
+	<ul>
+		<li>Caja Sullana</li>
+		<li>Compartamos Financiera</li>
+		<li>Cooperativa Pac&iacute;fico</li> 
+		<li>Caja Piura</li> 
+		<li>Caja Cusco</li> 
+		<li>Financiera Confianza</li>
+		<li>Banco Cencosud</li>
+		<li>Banco Ripley</li>
+		<li>Coop. Petroper&uacute;</li>
+		<li>Caja Metropolitano</li>
+		<li>Caja Maynas</li>
+		<li>Caja Ica</li>
+		<li>Caja Huancayo</li> 
+		<li>Caja Cusco</li>		
+		<li>Caja Centro</li>
+		<li>Caja Raiz</li>
+		<li>Caja Arequipa</li>
+		<li>Caja Paita</li>
+		<li>Caja Trujillo</li>
+		<li>Financiera Proempresa</li>
+		<li>Financiera Credinka</li>
+	</ul>	
+	</b>-->
+
+        Las gestiones de CTS para el pago de <b>noviembre 2021</b>, se podr&aacute;n efectuar hasta el <b>viernes 24 de setiembre</b>.
+        Toda solicitud requerida fuera de la fecha establecida, se efectuar&aacute; a partir de la segunda quincena de diciembre
+        2021. Recordemos que las entidades manejan un tiempo de <b>15 a 20 d&iacute;as h&aacute;biles</b> como m&aacute;ximo
+        para tramitar las solicitudes.
+        <br/>
+
+    </div>
+
+    <div id="preguntas">
+        <div class="subtitulo" style="width:150px;">Tu solicitud</div>
+
+        <div id="selecTipOper" class="row">
+
+            <span id="divEstado" class="col-12"></span>
+
+            <div class="col">
+                <div id="btnApertura" class="tipOper" style="background:url('images/Grupo\ 13.png');"
+                    title="Si eres nuevo en Rimac y a&uacute;n no tienes ning&uacute;n dep&oacute;sito de CTS, debes solicitar una Apertura de cuenta."></div>
+            </div>
+
+            <div class="col">
+                <div id="btnTraslado" class="tipOper" style="background:url('/images/traslado.jpg');"
+                    title="Si ya tienes m&aacute;s de un dep&oacute;sito de CTS y deseas cambiar de entidad financiera, debes solicitar un Traslado de cuenta."></div>
+            </div>
+
+            <div class="col">
+                <div id="btnUnificacion" class="tipOper" style="background:url('/images/unificacion.jpg');"
+                    title="Si tienes m&aacute;s de un dep&oacute;sito de CTS (solo con RIMAC) en diferentes entidades financieras y deseas unirlas, debes solicitar una Unificaci&oacute;n de cuenta."></div>
+            </div>
+
+            <div class="col">
+                <div id="btnCambioMoneda" class="tipOper" style="background:url('/images/cambiomoneda.jpg');"
+                    title="Si ya tienes m&aacute;s de un dep&oacute;sito de CTS y deseas cambiar el tipo de moneda, esto lo puedes realizar las veces que desees."></div>
+            </div>
+
+        </div>
+
+        <div id="formulario">
+            <div class="row">
+                <div id="DivTipOper" class="col"></div>
+            </div>
+            <div class="row">
+                <div id="tdEntidadOrigen" class="col">
+                    <span class="negro">Entidad de origen:</span>
+                    <br/>
+                    <span class="valDatoCts" id="sp_selEntidadOrigen"></span>
+                    <select id="selEntidadOrigen"></select>
+                </div>
+                <div id="tdMonedaOrigen" class="col">
+                    <span class="negro">Moneda de origen:</span>
+                    <br/>
+                    <span class="valDatoCts" id="sp_selMonedaOrigen"></span>
+                    <select id="selMonedaOrigen">
+					<option value=""></option>
+					<option value="Soles">Soles</option>
+					<option value="D&oacute;lares">D&oacute;lares</option>
+				</select>
+                </div>
+
+                <div id="tdEntidadDestino" class="col">
+                    <span class="negro">Entidad destino:</span>
+                    <br/>
+                    <select id="selEntidadDestino"></select>
+                </div>
+                <div id="tdMonedaDestino" class="col">
+                    <span class="negro">Moneda destino:</span>
+                    <br/>
+                    <select id="selMonedaDestino">
+					<option value=""></option>
+					<option value="Soles">Soles</option>
+					<option value="D&oacute;lares">D&oacute;lares</option>
+				</select>
+                </div>
+            </div>
+            <div class="row">
+                <div id="tdCuentaCts" class="col">
+                    <span class="negro">Cuenta CTS:</span>
+                    <br/>
+                    <span class="valDatoCts" id="sp_cuentaCts"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="textoCTS2" class="col">
+                    <span>
+				<b>Gesti&oacute;n de forma Virtual</b><br>
+				Si la entidad en la cual deseas aperturar tu cuenta CTS es:<br>
+				<ul>
+				<li>BBVA</li>
+				<li>BCP</li>
+				<li>INTERBANK</li>
+				<li>MIBANCO</li>
+				<li>BANCO RIPLEY</li>
+				<li>BANCO DEL COMERCIO</li>
+				<li>CAJA METROPOLITANA DE LIMA</li>
+				<li>CAJA MUNICIPAL DE AHORRO Y CR&Eacute;DITO DE ICA</li>
+				<li>COMPARTAMOS FINANCIERA S.A.</li>
+				<li>FINANCIERA CONFIANZA</li>
+				<li>FINANCIERA CREDINKA S.A.</li>
+				<li>FINANCIERA QAPAQ SA</li>
+				</ul>
+				
+				Deber&aacute;s registrar tu solicitud, descargar el formato, firmar y enviarlo junto con una copia del DNI, por correo a <a href="mailto:gdh_gestionadministrativa@rimac.com.pe">gdh_gestionadministrativa@rimac.com.pe</a>
+				<br>
+				<br>
+				<b>Gesti&oacute;n de forma Presencial</b><br>
+				<br>
+				Si la entidad que elegiste para aperturar no se encuentra en la lista anterior.<br>
+				Deber&aacute;s registrar su solicitud, imprimirla, firmarla con pu&ntilde;o y letra y enviarlo junto con una copia del DNI a Mesa de partes de la sede Torre del Parque, con la srta. 
+				Maristela Panta (Lunes a Viernes de 9:00 am - 5:00 pm).
+
+				</span>
+                </div>
+            </div>
+            <div class="row">
+                <div id="textoCTS1" class="col">
+                    <span>
+				<b>Gesti&oacute;n de forma Virtual</b><br>
+				Si tu entidad de origen actual es:<br>
+				<ul>
+				<li>BANCO GNB</li>
+				<li>INTERBANK</li>
+				<li>BANCO RIPLEY</li>
+				<li>MIBANCO</li>
+				<li>BANCO DEL COMERCIO</li>
+				<li>CAJA MUNICIPAL DE AHORRO Y CR&Eacute;DITO DE ICA</li>
+				<li>COMPARTAMOS FINANCIERA S.A.</li>
+				<li>COOPERATIVA DE AHORRO Y CREDITO PACIFICO</li>
+				<li>COOPERATIVA DE AHORRO Y CREDITO PETROPERU LTDA</li>
+				<li>FINANCIERA CONFIANZA</li>
+				<li>CAJA METROPOLITANA DE LIMA</li>
+				<li>FINANCIERA CREDINKA S.A.</li>
+				<li>FINANCIERA QAPAQ SA</li>
+				<li>COOPERATIVA AHORRO Y CREDITO SAN MARTIN DE PORRES LTDA.</li>
+				</ul>
+				
+				Deber&aacute;s registrar tu solicitud, descargar el formato, firmar y enviarlo junto con una copia del DNI, por correo a <a href="mailto:gdh_gestionadministrativa@rimac.com.pe">gdh_gestionadministrativa@rimac.com.pe</a>
+				<br>
+				<br>
+				<b>Gesti&oacute;n de forma Presencial</b><br>
+				Si tu entidad origen actual no se encuentra en la lista anterior.<br>
+				<br>
+				Deber&aacute;s registrar su solicitud, imprimirla, firmarla con pu&ntilde;o y letra y enviarlo junto con una copia del DNI a Mesa de partes de la sede Torre del Parque, con la srta. 
+				Maristela Panta (Lunes a Viernes de 9:00 am - 5:00 pm).
+
+				</span>
+                </div>
+            </div>
+            <div id="trConfirma1" class="row">
+                <div class="col">
+                    <span class="negro">Confirmar si traslado se realiz&oacute;</span>
+                    <br/>
+                    <select id="selConfirma">
+					<option value=""></option>
+					<option value="Si">Si</option>
+					<option value="No">No</option>
+				</select>
+                </div>
+            </div>
+            <div id="trConfirma2" class="row">
+                <div class="col">
+                    <span class="negro">Indica el n&uacute;mero de cuenta:</span>
+                    <br/>
+                    <input id="txtNroCuenta" type="text" class="txt" />&nbsp;<span>Solo ingresa n&uacute;meros, no guiones.</span>
+                </div>
+            </div>
+            <div id="trConfirma3" class="row">
+                <div class="col">
+                    <span class="negro">CCI:</span>
+                    <br/>
+                    <input id="txtCCI" type="text" class="txt" />&nbsp;<span>Solo ingresa n&uacute;meros, no guiones.</span>
+                </div>
+            </div>
+            <div id="trConfirma4" class="row">
+                <div class="col">
+                    <span class="negro">Motivo:</span>
+                    <br/>
+                    <select id="selMot">
+					<option value=""></option>
+					<option value="A&uacute;n no est&aacute; en la nueva entidad financiera">A&uacute;n no est&aacute; en la nueva entidad financiera</option>
+					<option value="Desist&iacute; del traslado">Desist&iacute; del traslado</option>
+					<!--<option value="Otro">Otro</option>-->
+				</select>
+                    <br/><br/>
+                    <div id="subTr">
+                        <span class="negro">Indique:</span>&nbsp;<input id="txtMot" type="text" class="txt" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="trObservaciones" class="row">
+                <div class="col">
+                    <div></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="emptyCol col"></div>
+                <div class="col">
+                    <div id="divControles">
+                        <input id="btnRegresar" type="button" value="Regresar" />
+                        <input id="btnEnviar" type="button" value="Enviar" />
+                        <input id="btnExport" type="button" value="Imprimir Solicitud" />
+                        <!--Recuerda que debes enviar tu solicitud firmada en f&iacute;sico y una copia legible de tu DNI a <a href="mailto:gdh_gestionadministrativa@rimac.com.pe">gdh_gestionadministrativa@rimac.com.pe<a>, por mensajer&iacute;a interna (Begonias 475-2do piso).-->
+                        <div id="msgImpresion">
+                            Su solicitud ha sido enviada a su correo para que proceda con la firma virtual o de pu&nacute;o y letra. Luego, presenta
+                            tu solicitud firmada junto con tu copia de DNI a <a href="mailto:gdh_gestionadministrativa@rimac.com.pe">gdh_gestionadministrativa@rimac.com.pe</a>                            o de forma presencial en la Mesa de Partes, <b>dependiendo de los requisitos de su entidad de CTS de origen que se detallan en las especificaciones de cada solicitud.</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="DivFlujo">
+        <div class="subtitulo" style="width:85px;">Pasos</div>
+        <div class="row">
+            <div class="col">
+                <div id="divDatosUser">
+                    <div class="subtitulo2" style="width:122px;float:left;">Solicitante:</div><span id="spNombre" class="negro" style="padding:11px 0px 0px 10px;float:left;"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin:0px !important;">
+            <div class="col cPaso">
+                <div id="paso1" class="paso" style="background:url('/images/flujo/paso1.jpg') no-repeat;"></div>
+                <div class="flecha"></div>
+            </div>
+
+            <div class="col cPaso">
+                <div id="paso2" class="paso" style="background:url('/images/flujo/paso2.jpg') no-repeat;"></div>
+                <div class="flecha"></div>
+            </div>
+
+            <div class="col cPaso">
+                <div id="paso3" class="paso" style="background:url('/images/flujo/paso3.jpg') no-repeat;"></div>
+                <div class="flecha"></div>
+            </div>
+
+            <div class="col cPaso">
+                <div id="paso4" class="paso" style="background:url('/images/flujo/paso4.jpg') no-repeat;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="DivAnteriores">
+        <div class="subtitulo" style="width:260px;">Tus solicitudes anteriores</div>
+
+        <div class="row">
+            <div id="divSolicitudesAnteriores" class="col">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id='divLoadHelper'></div>
+
+    <div id="InformationBox" style="display:none;">
+        <div id="DivModalRec">
+
+        </div>
+        <div id="DivModalButtons" style="float:right;padding-right:5px;">
+            <input class="btnMdl" type="button" value="Aceptar" onclick="SP.UI.ModalDialog.commonModalDialogClose(SP.UI.DialogResult.OK, 'Cancel'); return false;"
+            />
+            <input class="btnMdl" type="button" value="Cancelar" onclick="SP.UI.ModalDialog.commonModalDialogClose(SP.UI.DialogResult.cancel, 'Cancel'); return false;"
+            />
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="/solicitudv3.js"></script>
